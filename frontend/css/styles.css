@@ -1,6 +1,6 @@
 /* Variáveis de Cores */
 :root {
-  --primary-color: #cdeceb;
+  --primary-color: #aae6af;
   --secondary-color: #EA167B;
   --neutral-white: #FFFFFF;
   --neutral-light-gray: #F5F5F5;
@@ -212,4 +212,51 @@ footer {
     bottom: 10px;
     transform: translateY(0);
   }
+}
+
+/* Formulário de Cadastro */
+#cadastro {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: var(--neutral-white);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--neutral-light-gray);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--neutral-black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
 }
