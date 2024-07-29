@@ -1,7 +1,7 @@
 /* Variáveis de Cores */
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #FF9800;
+  --primary-color: #cdeceb;
+  --secondary-color: #EA167B;
   --neutral-white: #FFFFFF;
   --neutral-light-gray: #F5F5F5;
   --neutral-black: #212121;
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 20px 0;
 }
 
@@ -92,16 +92,16 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--neutral-white);
+  color: var(--neutral-black);
   padding: 10px 20px;
   transition: background 0.3s, color 0.3s;
   cursor: pointer; /* Adiciona o cursor pointer */
 }
 
 nav ul li a:hover {
-  background-color: var(--secondary-color);
+
   border-radius: 5px;
-  color: var(--neutral-black); /* Muda a cor do texto ao passar o mouse */
+  color: var(--secondary-color); /* Muda a cor do texto ao passar o mouse */
 }
 
 /* Containers */
@@ -183,7 +183,7 @@ section + section {
 footer {
   padding: 20px;
   background-color: var(--primary-color);
-  color: var(--neutral-white);
+  color: var(--neutral-black);
   margin-top: 40px; /* Espaçamento superior para o footer */
 }
 
