@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Mãos Unidas</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- Adicione o link do CSS do swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
         <img src="img/logo-projeto/logo-projeto-social.png" alt="Logo Mãos Unidas">
         <nav>
-            <ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-list">
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="login.html">Entrar</a></li>
@@ -20,70 +24,50 @@
         </nav>
     </header>
     <main>
-
-      <section id="destaques">
-        <h1>Empresas Destaques</h1>
-        <!-- Slider container -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/img-parceiros/atacadao-5.png" alt="logo atacadão"></div>
-                <div class="swiper-slide"><img src="img/img-parceiros/megamart-3.png" alt="logo megamart"></div>
-                <div class="swiper-slide"><img src="img/img-parceiros/mercadinho-4.png" alt="logo mercadinho"></div>
+        <section id="destaques">
+            <h1>Empresas Destaques</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/Banner/2.png" alt="destaques"></div>
+                    <div class="swiper-slide"><img src="./img/Banner/1.png" alt="participação"></div>
+                    <div class="swiper-slide"><img src="./img/Banner/3.png" alt="convite"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>    
-
+        </section>    
         <section id="sobre">
             <h2>Sobre o Projeto Mãos Unidas</h2>
             <p>Mãos Unidas é uma plataforma que conecta supermercados, atacadistas e doadores de alimentos com ONGs, prefeituras e instituições de trabalho voluntário. A plataforma facilita a doação de alimentos que estão próximos do vencimento, promovendo uma rede de solidariedade e combate ao desperdício de alimentos.</p>
         </section>
-
         <section id="artigo">
-          <h2>Artigo da OMS: Fome no Brasil e Desperdício de Alimentos</h2>
-          <div class="cards-container">
-              <article class="card">
-                  <h3>Fome no Brasil</h3>
-                  <p>A Organização Mundial da Saúde (OMS) destaca que a fome é um problema persistente no Brasil. Milhões de pessoas ainda vivem em situação de insegurança alimentar, sem acesso regular a alimentos suficientes para uma vida saudável e ativa.</p>
-              </article>
-              <article class="card">
-                  <h3>Desperdício de Alimentos</h3>
-                  <p>Paradoxalmente, o desperdício de alimentos também é um grande desafio. Estima-se que cerca de 30% de toda a produção de alimentos no país seja desperdiçada ao longo da cadeia produtiva, desde a colheita até o consumo final.</p>
-              </article>
-              <article class="card">
-                  <h3>Importância da Solidariedade</h3>
-                  <p>Iniciativas como o Mãos Unidas são essenciais para combater esses problemas, promovendo a redistribuição de alimentos e reduzindo o desperdício, ao mesmo tempo que ajudam a alimentar aqueles que mais precisam.</p>
-              </article>
-          </div>
-      </section>
-      
+            <h2>Artigo da OMS: Fome no Brasil e Desperdício de Alimentos</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Fome no Brasil</h3>
+                    <p>A Organização Mundial da Saúde (OMS) destaca que a fome é um problema persistente no Brasil. Milhões de pessoas ainda vivem em situação de insegurança alimentar, sem acesso regular a alimentos suficientes para uma vida saudável e ativa.</p>
+                </article>
+                <article class="card">
+                    <h3>Desperdício de Alimentos</h3>
+                    <p>Paradoxalmente, o desperdício de alimentos também é um grande desafio. Estima-se que cerca de 30% de toda a produção de alimentos no país seja desperdiçada ao longo da cadeia produtiva, desde a colheita até o consumo final.</p>
+                </article>
+                <article class="card">
+                    <h3>Importância da Solidariedade</h3>
+                    <p>Iniciativas como o Mãos Unidas são essenciais para combater esses problemas, promovendo a redistribuição de alimentos e reduzindo o desperdício, ao mesmo tempo que ajudam a alimentar aqueles que mais precisam.</p>
+                </article>
+            </div>
+        </section>
     </main>
     <footer>
-      <img src="./img/logo-projeto/logo-maos-unidas.png" alt="logo-maos-unidas">
+        <img src="./img/logo-projeto/logo-maos-unidas.png" alt="logo-maos-unidas">
         <p>&copy; 2024 Mãos Unidas. Todos os direitos reservados</p>
         <div class="box">
-            <img src="./img/icones-projeto/facebook.png" alt="facebook">
-            <img src="./img/icones-projeto/instagram.png" alt="instagram">
+            <a href="#"><img src="./img/icones-projeto/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./img/icones-projeto/instagram.png" alt="instagram"></a>
         </div>
     </footer>
-
-    <!-- Adicione os scripts do swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

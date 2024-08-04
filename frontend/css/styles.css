@@ -1,10 +1,11 @@
 /* Variáveis de Cores */
 :root {
-  --primary-color: #aae6af;
-  --secondary-color: #EA167B;
-  --neutral-white: #FFFFFF;
-  --neutral-light-gray: #F5F5F5;
-  --neutral-black: #212121;
+  --primary-color: #94d3ec; /* Azul */
+  --secondary-color: #00A86B; /* Verde */
+  --accent-color: #FF69B4; /* Rosa */
+  --neutral-white: #FFFFFF; /* Branco */
+  --neutral-light-gray: #F5F5F5; /* Cinza Claro */
+  --neutral-black: #212121; /* Preto */
   --card-bg: #E0F7FA; /* Fundo dos cards */
 }
 
@@ -87,21 +88,20 @@ nav ul {
   gap: 30px;
   margin: 0;
   padding: 0;
-  font-size: 1.2em; /* Tamanho da fonte */
-  font-weight: 600; /* Peso da fonte */
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 nav ul li a {
   color: var(--neutral-black);
   padding: 10px 20px;
   transition: background 0.3s, color 0.3s;
-  cursor: pointer; /* Adiciona o cursor pointer */
+  cursor: pointer;
 }
 
 nav ul li a:hover {
-
   border-radius: 5px;
-  color: var(--secondary-color); /* Muda a cor do texto ao passar o mouse */
+  color: var(--secondary-color);
 }
 
 /* Containers */
@@ -120,19 +120,21 @@ section {
 }
 
 section + section {
-  margin-top: 40px; /* Espaçamento entre seções */
+  margin-top: 40px;
 }
 
 .swiper-container {
   width: 100%;
   height: 300px;
   position: relative;
-  margin-bottom: 40px; /* Espaçamento inferior para evitar sobreposição */
+  margin-bottom: 40px;
 }
 
 .swiper-slide img {
-  width: 50%;
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -184,7 +186,7 @@ footer {
   padding: 20px;
   background-color: var(--primary-color);
   color: var(--neutral-black);
-  margin-top: 40px; /* Espaçamento superior para o footer */
+  margin-top: 40px;
 }
 
 footer img {
@@ -220,7 +222,7 @@ footer .box a img {
   }
 
   .swiper-container {
-    height: auto; /* Ajusta a altura para caber melhor em telas menores */
+    height: auto;
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -267,7 +269,7 @@ footer .box a img {
 
 .radio-group {
   display: flex;
-  flex-direction: column; /* Exibir as opções uma abaixo da outra */
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -293,4 +295,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
-
