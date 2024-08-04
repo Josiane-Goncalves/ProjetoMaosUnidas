@@ -114,10 +114,9 @@ section {
   margin: 20px auto;
   max-width: 800px;
   padding: 20px;
-  background-color: var(--neutral-white);
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 section + section {
   margin-top: 40px;
@@ -183,14 +182,14 @@ section + section {
 
 /* Footer */
 footer {
-  padding: 20px;
+  padding: 150px;
   background-color: var(--primary-color);
   color: var(--neutral-black);
   margin-top: 40px;
 }
 
 footer img {
-  max-height: 50px;
+  max-height: 100px;
 }
 
 footer .box {
